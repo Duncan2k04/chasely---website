@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chasely privacy notice</title>
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6F2;--surface:#FFFFFF;--ink:#12201B;--muted:#3F4F49;--line:#DCE1DB;--accent:#0F6B5C;--amber-bg:#FBEBD0;--amber-ink:#8A5100}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1714;--surface:#15211D;--ink:#EAF1EE;--muted:#B4C2BC;--line:#26362F;--accent:#5CC4AE;--amber-bg:#3A2A10;--amber-ink:#F0C070;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1714;--surface:#15211D;--ink:#EAF1EE;--muted:#B4C2BC;--line:#26362F;--accent:#5CC4AE;--amber-bg:#3A2A10;--amber-ink:#F0C070;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Instrument Sans',system-ui,sans-serif;line-height:1.6;font-size:16px}
+main{max-width:760px;margin:0 auto;padding:32px max(16px,4vw) 72px}
+a{color:var(--accent)}
+h1,h2{font-family:'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:clamp(32px,6vw,44px);line-height:1.08;margin:24px 0 8px}
+h2{font-size:22px;margin:36px 0 8px}
+p,li{color:var(--muted)}
+ul{padding-left:20px}
+.draft{background:var(--amber-bg);color:var(--amber-ink);padding:12px 16px;border-radius:12px;font-weight:600;font-size:15px;margin:20px 0}
+.back{font-weight:600;text-underline-offset:4px}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="index.html">&larr; Back to Chasely</a>
+<h1>Privacy notice</h1>
+<p>Last updated: <span id="d">October 2026</span></p>
+<p class="draft">Draft: have this reviewed by a professional familiar with POPIA before you take on real clients, then delete this box.</p>
+
+<h2>Who we are</h2>
+<p>Chasely is operated by Duncan Perucatti, South Africa ("we"). Contact: <span data-email>your email address</span>. We are the "responsible party" under the Protection of Personal Information Act (POPIA) for information about our customers, who are bookkeepers. For the information bookkeepers load about their own clients, the bookkeeper decides what is collected and why, and we process it on the bookkeeper's behalf.</p>
+
+<h2>What we collect</h2>
+<ul>
+<li>From bookkeepers: name, email address, business name, password (stored only in scrambled form) and billing details, which are handled by our payment provider.</li>
+<li>About a bookkeeper's clients: name, email address and/or phone number, and a list of documents the bookkeeper is waiting for.</li>
+<li>Messages: the reminders we send, replies we receive, delivery status, and the time each was sent.</li>
+</ul>
+<p>We do not store the documents themselves, and we never ask anyone for bank passwords or login details.</p>
+
+<h2>Why we use it</h2>
+<p>Only to run the service: sending document reminders on a bookkeeper's behalf, showing progress, alerting the bookkeeper when a client has not responded, and sending summaries and account emails.</p>
+
+<h2>Who else sees it</h2>
+<p>We use a small number of providers to run Chasely: a hosting provider, an email delivery provider, and, if enabled, an AI provider that helps word reminders. We share only what each needs to do its job. We do not sell personal information.</p>
+
+<h2>Opting out</h2>
+<p>Every reminder includes a way to stop receiving them. A client who replies STOP is paused and receives no further reminders.</p>
+
+<h2>How long we keep it</h2>
+<p>For as long as a bookkeeper's account is active. A bookkeeper can remove a client at any time, and we delete a closed account's data on request.</p>
+
+<h2>Your rights</h2>
+<p>You may ask to see, correct or delete personal information we hold about you, or object to its use. Email us at the address above. You may also contact the Information Regulator of South Africa.</p>
+
+<h2>Security</h2>
+<p>Passwords are stored scrambled, traffic is encrypted, and access is limited to the people who need it. No system is perfectly secure, and we will tell affected people and the Information Regulator if there is a breach that requires it.</p>
+</main>
+<script>
+var CONFIG = { email: "duncanperucatti@gmail.com" }; /* same address as on the home page */
+document.querySelectorAll('[data-email]').forEach(function (el) { if (CONFIG.email) el.textContent = CONFIG.email; });
+</script>
+</body>
+</html>
